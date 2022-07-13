@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-md-3">
+            <h1 class="text-center">User Profile</h1>
+            <mat-card>
+                <img mat-card-image src="/assets/images/userprofilefront.jpeg" alt="Profile pic"/>
+                <mat-card-content>
+                    Name: {{fullname}}
+                    <br>
+                    Email: {{useremail}}
+                </mat-card-content>
+                <mat-card-actions class="text-center">
+                    <button mat-button (click)="openDialog()">CHANGE PASSWORD</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

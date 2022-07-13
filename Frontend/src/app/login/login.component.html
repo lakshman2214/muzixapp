@@ -1,0 +1,45 @@
+<div style="min-width: 100%;min-height: 100%;background-image:url('../assets/img-music.jpg');">
+    <br>
+    <div class="container" style="max-width: 600px;min-height: 400px;background-color:aquamarine;">
+        <img class="img-fluid" style="width :100px" src="/assets/lock img.png" alt="" class="center"/>
+        <h2 class="textual">User Login</h2>
+    <form #loginform="ngForm" (ngSubmit)="loginUser()" >
+        <small class="text-danger">{{msg}}</small>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control"  placeholder="Enter email" name="email"[(ngModel)]="user.emailid" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+           #email="ngModel"
+          [class.is-invalid]="email.invalid && email.touched" 
+          >
+          <small class="text-danger" [class.d-none]="email.valid || email.untouched">EmailId is required field.Please enter valid emailId</small>
+         
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Password:</label>
+        <div class="col-sm-10">          
+          <input type="password" class="form-control"  placeholder="Enter password" name="pwd" [(ngModel)]="user.password" #password="ngModel" required
+          [class.is-invalid]="password.invalid && password.touched" 
+          >
+          <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required field</small>
+        </div>
+      </div>
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+          <button color="accent" [disabled]="loginform.form.invalid" type="submit" class="btn btn-info">Login</button>
+        </div>
+      </div>
+      
+    </form>
+    <!-- <p class="mt">{{user | json}}</p> -->
+    <small class="float-right" (click)="gotoregistration()">New User? Register Here</small>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

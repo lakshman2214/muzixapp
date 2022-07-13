@@ -1,0 +1,13 @@
+
+/* body {
+    background-color:rgb(94, 4, 4);
+    background-image:url(https://wallpapercave.com/wp/wp4617170.jpg);
+  } */
+
+.content-wrapper {
+  /* background-color: #333; */
+  background-image: url(/assets/images/userprofile.jpeg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 64px;
+}

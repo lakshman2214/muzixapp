@@ -1,0 +1,14 @@
+.title{
+    color: #fff;
+    margin-top: 70px;
+  }
+  
+  .title h1{
+    font-size: 40px;
+  }
+  
+  .search input {
+    padding: 1rem 2rem;
+    font-size: 20px;
+    margin-top: 60px;
+  }

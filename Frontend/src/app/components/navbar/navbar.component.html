@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <!--<button mat-button routerLink="/">
+        Muzify
+    </button>-->
+    <span><a mat-icon-button *ngIf="loggedIn" routerLink="/home">HOME</a></span>
+    <span class="spacer"></span>
+    <div>
+        <button *ngIf="loggedIn" mat-button routerLink="/artistsearch">Artist Search</button>
+        <button *ngIf="!loggedIn" mat-button routerLink="/login">Login</button>
+        <button *ngIf="!loggedIn" mat-button routerLink="/registration">Signup</button>
+        <button *ngIf="loggedIn" mat-button routerLink="/tracksearch">Track Search</button>
+        <button *ngIf="loggedIn" mat-button routerLink="/addfavourite">Favourites</button>
+        <button *ngIf="loggedIn" mat-button routerLink="/showuserdetails">Profile</button>
+        <button *ngIf="loggedIn" (click)="logOutUser()" mat-button>Logout <mat-icon style="font-size: 20px;">logout</mat-icon></button>
+    </div>
+</mat-toolbar>

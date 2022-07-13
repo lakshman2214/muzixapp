@@ -1,0 +1,30 @@
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}  
+
+.title{
+  color: #fff;
+  margin-top: 70px;
+}
+
+.title h1{
+  font-size: 40px;
+}
+
+.search input {
+  padding: 1rem 2rem;
+  font-size: 20px;
+  margin-top: 60px;
+}

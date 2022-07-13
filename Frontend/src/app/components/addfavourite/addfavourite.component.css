@@ -1,0 +1,22 @@
+body{
+    background-color: ivory;
+    
+}
+.block{
+    max-width: calc(100vw-70vw);
+    background-color: antiquewhite;
+}
+mat-card{
+    margin-bottom: 24px;
+}
+mat-card a{
+    color: #fff;
+    text-decoration: none;
+}
+.spacer{
+    flex: 1 1 auto;
+}
+h1{
+    color: #fff;
+    margin-top:20px;
+}
